@@ -1,0 +1,21 @@
+<table>
+	<tr>
+		<th>Purchaser name</th>
+		<th>Item description</th>
+		<th>Item price</th>
+		<th>Purchase count</th>
+		<th>Merchant address</th>
+		<th>Merchant name</th>
+	</tr>
+	<% @purchases.each do |purchase| %>
+		<tr>
+			<td><%= purchase.purchaser.name %></td>
+			<td><%= purchase.item.description %></td>
+			<td><%= purchase.item.price %></td>
+			<td><%= purchase.count %></td>
+			<td><%= purchase.item.merchant.address %></td>
+			<td><%= purchase.item.merchant.name %></td>
+		</tr>
+	<% end %>
+	
+</table>
