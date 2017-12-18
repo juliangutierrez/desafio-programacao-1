@@ -1,5 +1,3 @@
-[TOC]
-
 # General Information
 
 The project was built using Ruby 2.3.3 and Rails framework 5.1.4. Database management system is SQLite3. The project was built on Ubuntu 14.04.5 LTS.
