@@ -14,8 +14,8 @@
 			<td><%= purchase.item.price %></td>
 			<td><%= purchase.count %></td>
 			<td><%= purchase.item.merchant.address %></td>
-			<td><%= purchase.item.merchant.name %></td>
+			<td><%= purchase.item.merchant.name %></td>			
 		</tr>
 	<% end %>
-	
+	<tr><td colspan="6"><strong>Total: </strong><%= @purchases.inject(0) { |result, purchase| result + purchase.total } %></td></tr>	
 </table>
